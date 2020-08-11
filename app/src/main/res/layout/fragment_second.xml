@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_primary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/border_button_login_activity"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="ADD CAREER"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="48sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/career_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_button_login_activity"
+            android:drawableLeft="@drawable/ic_action_career"
+            android:textColor="@color/design_default_color_primary"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/career_salary"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_button_login_activity"
+            android:drawableLeft="@drawable/ic_action_salary"
+            android:inputType="number"
+            android:textColor="@color/design_default_color_primary"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp">
+
+        </EditText>
+
+
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border_button_register_activity"
+            android:text="ADD"
+            android:textColor="@android:color/white">
+
+        </Button>
+
+    </LinearLayout>
+
+</RelativeLayout>

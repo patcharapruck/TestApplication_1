@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/design_default_color_primary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="LOGIN"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="48sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/user"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/ic_action_user_light"
+                android:backgroundTint="@color/design_default_color_primary"
+                android:hint="USERNAME"
+                style="@style/edittext_style">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/ic_action_pass_light"
+                android:backgroundTint="@color/design_default_color_primary"
+                android:hint="PASSWORD"
+                android:inputType="textPassword"
+                style="@style/edittext_style">
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/text_regis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="สมัครสมาชิก"
+                android:textSize="18sp"
+                android:layout_gravity="right"
+                android:textColor="@color/design_default_color_primary"
+                android:layout_marginBottom="10dp">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/border_button_register_activity"
+                android:text="LOGIN"
+                android:textColor="@android:color/white">
+
+            </Button>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

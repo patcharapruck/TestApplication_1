@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_primary">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/border_button_login_activity"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="REGISTER"
+                    android:textColor="@color/design_default_color_primary"
+                    android:textSize="48sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/regis_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:drawableLeft="@drawable/ic_action_user_light"
+                    android:background="@drawable/border_button_login_activity"
+                    android:hint="USERNAME"
+                    style="@style/edittext_style_add">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/regis_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:drawableLeft="@drawable/ic_action_pass_light"
+                    android:background="@drawable/border_button_login_activity"
+                    android:inputType="textPassword"
+                    android:hint="PASSWORD"
+                    style="@style/edittext_style_add">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/regis_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:drawableLeft="@drawable/ic_action_user_name_light"
+                    android:hint="NAME"
+                    android:background="@drawable/border_button_login_activity"
+                    style="@style/edittext_style_add">
+
+                </EditText>
+
+                <Button
+                    android:id="@+id/btn_user_birth"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/border_button_login_activity"
+                    android:text="CALANDER"
+                    android:gravity="left|center_vertical"
+                    android:drawableLeft="@drawable/ic_action_user_birth_light"
+                    style="@style/edittext_style_add">
+
+                </Button>
+
+                <EditText
+                    android:id="@+id/regis_user_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:drawableLeft="@drawable/ic_action_user_phone_light"
+                    android:inputType="number"
+                    android:hint="PHONE"
+                    android:background="@drawable/border_button_login_activity"
+                    style="@style/edittext_style_add">
+
+                </EditText>
+
+                <Button
+                    android:id="@+id/btn_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/border_button_register_activity"
+                    android:text="REGISTER"
+                    android:textColor="@android:color/white">
+
+                </Button>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

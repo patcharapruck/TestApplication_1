@@ -1,10 +1,13 @@
 package com.example.testapplication_1
 
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -27,6 +30,8 @@ class ListCareerFragment : Fragment() {
 
     private var dto: LoginCollectionDto? = null
     private var user_id: Int? = null
+
+    private lateinit var searchText: EditText
 
     fun newInstance():ListCareerFragment{
         val fragment:ListCareerFragment = ListCareerFragment()
@@ -55,13 +60,32 @@ class ListCareerFragment : Fragment() {
     private fun initInstances(rootView: View) {
 
         recyclerCareer = rootView.findViewById(R.id.recycler_career) as RecyclerView
-
+        searchText = rootView.findViewById(R.id.search_text) as EditText
         dto = LoginManager.getInstance()!!.getLoginDto()
 
         if (dto != null){
             user_id = dto!!.data!!.userID
-            getCareerList(user_id)
         }
+
+        searchText.addTextChangedListener(object : TextWatcher{
+            override fun afterTextChanged(s: Editable?) {
+
+            }
+
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                getCareerList(user_id,searchText.text.toString())
+            }
+
+        })
+    }
+
+    override fun onStart() {
+        super.onStart()
+        getCareerList(user_id,searchText.text.toString())
     }
 
     private fun setRecyclerView(data: List<CareerListItemDto?>) {
@@ -90,9 +114,9 @@ class ListCareerFragment : Fragment() {
         // save stances to bundle
     }
 
-    fun getCareerList(id:Int?) {
+    fun getCareerList(id:Int?,str:String) {
 
-        HttpManager.service.getCareerList(id)
+        HttpManager.service.getCareerList(id,str)
             .enqueue(object : Callback<CareerListCollectionDto> {
                 override fun onFailure(call: Call<CareerListCollectionDto>, t: Throwable) {
                     Log.d("failure",t.message)

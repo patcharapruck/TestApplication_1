@@ -31,7 +31,9 @@ interface ApiService {
 
     @GET("user/career/list")
     fun getCareerList(
-        @Query("id") id: Int?): Call<CareerListCollectionDto>
+        @Query("id") id: Int?,
+        @Query("text") text: String
+    ): Call<CareerListCollectionDto>
 
     @GET("user/career")
     fun getCareer(
@@ -41,4 +43,6 @@ interface ApiService {
     fun careerAPI(
         @Body json: RequestBody
     ): Call<ResCareerCollectionDto>
+
+
 }

@@ -16,16 +16,6 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-    }
-
-    override fun onStart() {
-        super.onStart()
-
-        initInstances()
-    }
-
-    private fun initInstances() {
-
         supportFragmentManager.beginTransaction()
             .add(R.id.container_home,ListCareerFragment().newInstance())
             .commit()
@@ -38,6 +28,11 @@ class HomeActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         }
+
+        initInstances()
+    }
+
+    private fun initInstances() {
 
         toolbar = findViewById(R.id.toolbar) as Toolbar
         setSupportActionBar(toolbar)

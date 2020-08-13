@@ -1,8 +1,8 @@
 package com.example.testapplication_1.view.modelclass
 
-class CareerPlatModelClass (val career_id: Int, val career_name: String? ,val career_salary: Int?) {
+class CareerPlatModelClass (val career_id: Int?, val career_name: String? ,val career_salary: Int?) {
 
-    private var careerID: Int = 0
+    private var careerID: Int? = 0
     private var careerName:String? = ""
     private var careerSalary:Int? = 0
 
@@ -17,7 +17,7 @@ class CareerPlatModelClass (val career_id: Int, val career_name: String? ,val ca
         this.careerSalary = career_salary
     }
 
-    fun getCareerID(): Int {
+    fun getCareerID(): Int? {
         return careerID
     }
 

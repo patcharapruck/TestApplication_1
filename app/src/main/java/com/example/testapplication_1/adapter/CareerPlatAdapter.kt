@@ -25,7 +25,7 @@ class CareerPlatAdapter (val context: Context ,val items: ArrayList<CareerPlatMo
     }
 
     override fun getItemCount(): Int {
-        return 10
+        return items.size
     }
 
     override fun onBindViewHolder(holder: CareerPlatHolder, position: Int) {

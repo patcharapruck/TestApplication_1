@@ -14,6 +14,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.example.testapplication_1.dto.login.LoginCollectionDto
 import com.example.testapplication_1.http.HttpManager
+import com.example.testapplication_1.singleton.LoginManager
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -111,6 +112,8 @@ class LoginFragment : Fragment(), View.OnClickListener {
                             val dto: LoginCollectionDto? = response.body()
                             when (dto!!.status) {
                                 200 -> {
+                                    val loginManager: LoginManager.Companion = LoginManager
+                                    loginManager.getInstance()?.setLoginDto(dto)
                                     loginSubmit()
                                 }
                             }

@@ -73,7 +73,8 @@
         android:background="@drawable/border_table_career"
         tools:listitem="@layout/customview_list_career"
         tools:ignore="NestedWeights"
-        android:paddingTop="10dp">
+        android:paddingTop="10dp"
+        android:paddingBottom="60dp">
 
     </androidx.recyclerview.widget.RecyclerView>
 

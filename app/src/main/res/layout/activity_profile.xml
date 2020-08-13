@@ -41,16 +41,18 @@
 
         </EditText>
 
-        <EditText
+        <Button
             android:id="@+id/profile_user_birth"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:drawableLeft="@drawable/ic_action_user_birth_light"
-            android:text="trtrtrtrt"
             android:background="@drawable/border_button_login_activity"
+            android:text="CALANDER"
+            android:gravity="left|center_vertical"
+            android:drawableLeft="@drawable/ic_action_user_birth_light"
             style="@style/edittext_style_add">
 
-        </EditText>
+        </Button>
+
 
         <EditText
             android:id="@+id/profile_user_phone"
@@ -65,7 +67,7 @@
         </EditText>
 
         <Button
-            android:id="@+id/btn_register"
+            android:id="@+id/btn_edit_user"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/border_button_register_activity"

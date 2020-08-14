@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    android:background="@color/design_default_color_primary">
+    android:background="@color/design_default_color_primary"
+    android:fillViewport="true">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -34,24 +33,24 @@
 
             <EditText
                 android:id="@+id/user"
+                style="@style/edittext_style"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:drawableLeft="@drawable/ic_action_user_light"
                 android:backgroundTint="@color/design_default_color_primary"
-                android:hint="USERNAME"
-                style="@style/edittext_style">
+                android:drawableLeft="@drawable/ic_action_user_light"
+                android:hint="USERNAME">
 
             </EditText>
 
             <EditText
                 android:id="@+id/pass"
+                style="@style/edittext_style"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:drawableLeft="@drawable/ic_action_pass_light"
                 android:backgroundTint="@color/design_default_color_primary"
+                android:drawableLeft="@drawable/ic_action_pass_light"
                 android:hint="PASSWORD"
-                android:inputType="textPassword"
-                style="@style/edittext_style">
+                android:inputType="textPassword">
 
             </EditText>
 
@@ -59,11 +58,11 @@
                 android:id="@+id/text_regis"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="สมัครสมาชิก"
-                android:textSize="18sp"
                 android:layout_gravity="right"
+                android:layout_marginBottom="10dp"
+                android:text="สมัครสมาชิก"
                 android:textColor="@color/design_default_color_primary"
-                android:layout_marginBottom="10dp">
+                android:textSize="18sp">
 
             </TextView>
 

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -36,10 +35,10 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/border_button_login_activity"
             android:drawableLeft="@drawable/ic_action_career"
-            android:textColor="@color/design_default_color_primary"
-            android:paddingEnd="10dp"
+            android:drawablePadding="10dp"
             android:paddingLeft="10dp"
-            android:drawablePadding="10dp">
+            android:paddingEnd="10dp"
+            android:textColor="@color/design_default_color_primary">
 
         </EditText>
 
@@ -50,14 +49,13 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/border_button_login_activity"
             android:drawableLeft="@drawable/ic_action_salary"
+            android:drawablePadding="10dp"
             android:inputType="number"
-            android:textColor="@color/design_default_color_primary"
-            android:paddingEnd="10dp"
             android:paddingLeft="10dp"
-            android:drawablePadding="10dp">
+            android:paddingEnd="10dp"
+            android:textColor="@color/design_default_color_primary">
 
         </EditText>
-
 
 
         <Button

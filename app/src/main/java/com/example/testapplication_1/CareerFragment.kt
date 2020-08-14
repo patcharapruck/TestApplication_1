@@ -156,7 +156,7 @@ class CareerFragment : Fragment(), View.OnClickListener {
             })
     }
 
-    private fun editCareer(json: String?) {
+    private fun editCareer(json: String) {
 
         val requestBody: RequestBody = RequestBody.create(MediaType.parse("application/json"), json)
         HttpManager.service.careerAPI(requestBody)

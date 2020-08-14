@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/design_default_color_primary">
@@ -40,59 +39,59 @@
 
                 <EditText
                     android:id="@+id/regis_user"
+                    style="@style/edittext_style_add"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:drawableLeft="@drawable/ic_action_user_light"
                     android:background="@drawable/border_button_login_activity"
-                    android:hint="USERNAME"
-                    style="@style/edittext_style_add">
+                    android:drawableLeft="@drawable/ic_action_user_light"
+                    android:hint="USERNAME">
 
                 </EditText>
 
                 <EditText
                     android:id="@+id/regis_pass"
+                    style="@style/edittext_style_add"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:drawableLeft="@drawable/ic_action_pass_light"
                     android:background="@drawable/border_button_login_activity"
-                    android:inputType="textPassword"
+                    android:drawableLeft="@drawable/ic_action_pass_light"
                     android:hint="PASSWORD"
-                    style="@style/edittext_style_add">
+                    android:inputType="textPassword">
 
                 </EditText>
 
                 <EditText
                     android:id="@+id/regis_user_name"
+                    style="@style/edittext_style_add"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:drawableLeft="@drawable/ic_action_user_name_light"
-                    android:hint="NAME"
                     android:background="@drawable/border_button_login_activity"
-                    style="@style/edittext_style_add">
+                    android:drawableLeft="@drawable/ic_action_user_name_light"
+                    android:hint="NAME">
 
                 </EditText>
 
                 <Button
                     android:id="@+id/btn_user_birth"
+                    style="@style/edittext_style_add"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:background="@drawable/border_button_login_activity"
-                    android:text="CALANDER"
-                    android:gravity="left|center_vertical"
                     android:drawableLeft="@drawable/ic_action_user_birth_light"
-                    style="@style/edittext_style_add">
+                    android:gravity="left|center_vertical"
+                    android:text="CALANDER">
 
                 </Button>
 
                 <EditText
                     android:id="@+id/regis_user_phone"
+                    style="@style/edittext_style_add"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:drawableLeft="@drawable/ic_action_user_phone_light"
-                    android:inputType="number"
-                    android:hint="PHONE"
                     android:background="@drawable/border_button_login_activity"
-                    style="@style/edittext_style_add">
+                    android:drawableLeft="@drawable/ic_action_user_phone_light"
+                    android:hint="PHONE"
+                    android:inputType="number">
 
                 </EditText>
 
